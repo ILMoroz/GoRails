@@ -1,8 +1,10 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Index from '../views/lk/Index.vue'
+import Billing from '../views/lk/Billing.vue'
 import Main from '../views/lk/Main.vue'
-import Info from '../views/lk/Info.vue'
+import Lk from '../views/lk/LK.vue'
+import ProfileRTS from '../views/lk/ProfileRTS.vue'
+import ProfileMTS from '../views/lk/ProfileMTS.vue'
 import MultiPlayer from '../views/lk/Mp.vue'
 
 const routes = [
@@ -12,22 +14,20 @@ const routes = [
     component: Home
   },
   {
-    path: '/lk',
-    name: 'lk',
-    component: Index,
+    path: '/billing',
+    name: 'billing',
+    component: Billing,
     children: [
+      { path: '', component: Main },
       {
-        path: 'index',
-        component: Main,
+         path: 'lk',
+         component: Lk,
+         children: [
+           { path: '', component: ProfileRTS},
+           { path: 'metro', component: ProfileMTS}
+         ]
       },
-      {
-        path: 'info',
-        component: Info,
-      },
-      {
-        path: 'mp',
-        component: MultiPlayer,
-      },
+      { path: 'mp',  component: MultiPlayer,},
     ]
   },
 
