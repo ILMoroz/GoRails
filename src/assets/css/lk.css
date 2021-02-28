@@ -367,3 +367,90 @@ a.article:hover {
 .lk-header-block ul li a:hover > svg > path {
   fill: #FFFFFF;
 }
+.lk-profile-block {
+  display: grid;
+  margin-top: 55px;
+}
+.lk-profile-icon {
+  display: grid;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.lk-profile-icon img {
+  filter: drop-shadow(0px 25px 48px rgba(0, 0, 0, 0.25));
+}
+.lk-profile-nickname {
+  font-family: "Montserrat-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #000000;
+}
+.lk-profile-type {
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #767676;
+  margin-bottom: 26px;
+}
+.lk-profile-shoulder ul {
+  padding: 0;
+  list-style: none;
+}
+.lk-profile-shoulder ul span,
+.lk-profile-shoulder ul p {
+  margin-top: 18px;
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.lk-profile-shoulder ul span span,
+.lk-profile-shoulder ul p span {
+  margin-left: 20px;
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+}
+.lk-profile-shoulder ul li span {
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  margin-left: 9px;
+}
+.lk-profile-info ul {
+  padding: 0;
+  list-style: none;
+}
+.lk-profile-info ul li {
+  font-family: "Montserrat-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  margin-bottom: 14px;
+}
+.lk-profile-info ul li span {
+  font-family: "Montserrat-Medium";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #555555;
+  margin-left: 20px;
+}
