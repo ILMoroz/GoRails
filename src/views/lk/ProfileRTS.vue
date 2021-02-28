@@ -1,5 +1,5 @@
 <template>
 
-<h1>LK-RTS</h1>
+<h1>Профиль РТС</h1>
 
 </template>

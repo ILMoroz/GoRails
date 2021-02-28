@@ -4,7 +4,10 @@ import Billing from '../views/lk/Billing.vue'
 import Main from '../views/lk/Main.vue'
 import Lk from '../views/lk/LK.vue'
 import ProfileRTS from '../views/lk/ProfileRTS.vue'
-import ProfileMTS from '../views/lk/ProfileMTS.vue'
+import ProfileMT from '../views/lk/ProfileMT.vue'
+import MPInfo from '../views/lk/MPInfo.vue'
+import CTInfo from '../views/lk/CTInfo.vue'
+import Settings from '../views/lk/Settings.vue'
 import MultiPlayer from '../views/lk/Mp.vue'
 
 const routes = [
@@ -24,7 +27,11 @@ const routes = [
          component: Lk,
          children: [
            { path: '', component: ProfileRTS},
-           { path: 'metro', component: ProfileMTS}
+           { path: 'metro', component: ProfileMT},
+           { path: 'mp', component: MPInfo},
+           { path: 'ct', component: CTInfo},
+           { path: 'settings', component: Settings},
+
          ]
       },
       { path: 'mp',  component: MultiPlayer,},

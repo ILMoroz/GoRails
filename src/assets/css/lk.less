@@ -45,7 +45,7 @@ a:focus {
 }
 
 /* ---------------------------------------------------
-    SIDEBAR STYLE
+    SIDEBAR
 ----------------------------------------------------- */
 
 .wrapper {
@@ -100,6 +100,10 @@ a:focus {
     padding: 10px;
     color: #000;
 
+    & svg {
+        fill: #000;
+    }
+
     & > span {
       margin-left: 20px;
     }
@@ -122,6 +126,10 @@ a[aria-expanded="true"] {
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
+
+    & svg {
+        fill: #fff;
+    }
 
 }
 
@@ -190,10 +198,6 @@ a.article:hover {
   justify-content: space-evenly;
 }
 
-/* ---------------------------------------------------
-    CONTENT STYLE
------------------------------------------------------ */
-
 #content {
     width: 100%;
     padding: 20px;
@@ -218,7 +222,7 @@ a.article:hover {
 }
 
 /* ---------------------------------------------------
-    Billing
+    Биллинг
 ----------------------------------------------------- */
 .lk-welcome {
     margin-bottom: 75px;
@@ -327,7 +331,7 @@ a.article:hover {
 }
 
 /* ---------------------------------------------------
-    LK
+    Личный Кабинет
 ----------------------------------------------------- */
 .lk-header {
     margin-top: 80px;
@@ -344,5 +348,45 @@ a.article:hover {
         display: flex;
         justify-content: space-evenly;
         list-style: none;
+    }
+
+    & ul li.active {
+        & svg rect {
+            cursor: pointer;
+            shape-rendering: crispEdges;
+            fill: url(#paint0_linear);
+            stroke: transparent;
+        }
+  
+          & svg path {
+            fill: #FFFFFF;
+        }
+    }
+
+    & ul li a {
+        & > svg > rect {
+            cursor: pointer;
+            shape-rendering: crispEdges;
+            stroke: rgb(221, 221, 221);
+            stroke-width: 2;
+            fill: transparent;
+        }
+
+        & > svg > path {
+            fill: #878787;
+        }
+
+        &:hover {
+            & > svg > rect {
+                cursor: pointer;
+                shape-rendering: crispEdges;
+                fill: url(#paint0_linear);
+                stroke: transparent;
+            }
+
+            & > svg > path {
+                fill: #FFFFFF;
+            }
+        }
     }
 }
